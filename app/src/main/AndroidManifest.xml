@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grxiaofang">
+    <!--mod短信所需权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITEAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--联网权限，访问数据库-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 可选 -->
+    <!--管理蓝牙需要-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--搜索蓝牙需要，因为蓝牙可以被用来定位，所以需要定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/grxiaofang"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/grxiaofang"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Grxiaofang">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".bluetooth"
+            android:label="连接设备" />
+
+        <activity
+            android:name=".test"
+            android:label="测试页面" />
+        <activity
+            android:name=".register"
+            android:label="注册账号" />
+        <activity
+            android:name=".alter"
+            android:label="修改密码" />
+        <activity
+            android:name=".phoneLogin"
+            android:label="手机号登陆" />
+    </application>
+
+</manifest>

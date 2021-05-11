@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智能消防栓</string>
+    <string name="Broadcast">刷新列表</string>
+    <string name="close">关闭蓝牙</string>
+    <string name="discovery">发现蓝牙</string>
+    <string name="open">打开蓝牙</string>
+    <string name="reminder">#温馨提示：使用该软件需要手动打开位置信息权限!#</string>
+    <string name="divide">搜索到的设备</string>
+</resources>
